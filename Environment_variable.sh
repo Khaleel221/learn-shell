@@ -12,3 +12,6 @@ echo "list of directories to search for executable: $PATH"
 export TESTING="test"
 
 echo $TESTING
+
+unset TESTING
+echo $TESTING
