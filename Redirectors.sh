@@ -8,4 +8,4 @@
 
 #redirect standard error
 
-ls  > error.log
+ls  2> error.log
