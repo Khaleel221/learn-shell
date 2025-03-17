@@ -22,9 +22,17 @@
 #echo "output is $store"
 
 
+#local_variable(){
+#  local variable="testing local variable"
+#  echo $variable
+#}
+#local_variable
+#echo $variable
+
 local_variable(){
-  local variable="testing local variable"
-  echo $variable
+  echo x
+  variable="testing local variable"
 }
+x=20
 local_variable
 echo $variable
