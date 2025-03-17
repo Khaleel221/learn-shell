@@ -4,4 +4,8 @@
 #ls > output.txt
 
 #redirect the output , append if file exists
-ls >> output.txt
+#ls >> output.txt
+
+#redirect standard error
+
+ls /non-exitense 2> error.log
