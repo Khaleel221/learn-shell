@@ -3,4 +3,4 @@
 function_name(){
   echo "Hello $1 $2"
 }
-function_name khalee shaik
+function_name
