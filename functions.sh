@@ -13,5 +13,10 @@ testr(){
 }
 testr "khaleel" ,"shaik"
 
+#function with return value
 
-
+function_with_return_value(){
+   echo $(($1 + $2))
+}
+store=$((function_with_return_value 4 5))
+echo "output is $store"
