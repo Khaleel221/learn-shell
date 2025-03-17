@@ -13,5 +13,3 @@ export TESTING="test"
 
 echo $TESTING
 
-unset TESTING
-echo $TESTING
