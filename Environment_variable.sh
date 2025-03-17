@@ -9,6 +9,6 @@ echo "list of directories to search for executable: $path"
 
 #to add environment variable
 
-export "testing=test"
+export testing="test"
 
 echo $testing
