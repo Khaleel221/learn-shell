@@ -4,11 +4,11 @@
 #\e[om - to disable colors
 #color code
 #red(31)
-#yellow(32)
-#green(33)
+#green(32)
+#yellow(33)
 #blue(34)
 #magenta(35)
-#cyan (35)
+#cyan (36)
 
 echo -e "\e[31m Hello world!\e[0m"
 echo -e "\e[32m Hello world!\e[0m"
