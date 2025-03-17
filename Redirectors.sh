@@ -8,4 +8,4 @@
 
 #redirect standard error
 
-ls /non-exitense 2> error.log
+ls /non-exitense 2>> error.log
