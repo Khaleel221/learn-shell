@@ -1,37 +1,34 @@
 #Write a script that takes two numbers and an operator (+, , , /) as input and performs the calculation.
 
-if [$# -ne 3 ];then
-  echo "usage is $0 <number1> <operator> <number2> "
-  echo "example is $0 is 2 + 3"
-  exit 1
-  fi
+if [$# -ne 3];then
+ echo "$? <number1> <opreator> <number>"
+ echo "example $? 2 + 3"
+ exit 1
+ fi
 
-numb1=$1
+num1=$1
 operator=$2
-numb2=$2
+num2=$3
 
 case $operator in
 +)
-result=$(($numb1 + $numb2))
-;;
+result=$(($num1 + $num2))
+  ;;
 -)
-result=$(($numb1 - $numb2))
+result=$(($num1 - $num2))
 ;;
 *)
-result=$(($numb1 * $numb2))
+result=$(($num1 * $num2))
 ;;
 /)
- if [$numb2 -eq 0]; then
-   echo "zero is not dividable"
-   exit
-   fi
-  result=$(($numb1 / $numb2))
-;;
-*)
-  echo "inavlid"
+if [$num2 -eq 0];then
+  echo "invalid number"
   exit 1
+  fi
+result=$(($num1 / $num2))
+*)
+echo "invalid number"
 ;;
 esac
-  echo $numb1 $operator $numb2 = $result
 
-
+echo "$num1 $operator $num2 =$result
