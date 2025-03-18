@@ -25,12 +25,13 @@ result=$(($number1 * $number2))
     echo "invalid number"
   exit 1
   fi
-result=$(($number / $number2))
+result=$(($number1 / $number2))
 ;;
 *)
   echo "invalid number"
+  exit 1
 ;;
-elas
+esac
 
 echo "$number1 $operator $number2 = $result"
 
