@@ -21,7 +21,7 @@ result=$(($number1 - $number2))
 result=$(($number1 * $number2))
 ;;
 /)
-  if [$number -eq 0];then
+  if [ $number2 -eq 0 ];then
     echo "invalid number"
   exit 1
   fi
