@@ -5,8 +5,8 @@
 #else
 #  echo "less than 10"
 #fi
-
-marks=75
+echo enter your marks
+read marks
 if [ $marks -ge 90 ]; then
  echo "topper"
  elif [ $marks -ge 60 ]; then
@@ -14,3 +14,4 @@ if [ $marks -ge 90 ]; then
  else
    echo "second class"
    fi
+
