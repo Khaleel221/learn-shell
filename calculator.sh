@@ -26,6 +26,12 @@ result=$(($numb1 * $numb2))
    exit
    fi
   result=$(($numb1 / $numb2))
+;;
+*)
+  echo "inavlid"
+  exit 1
+;;
+esac
   echo $numb1 $operator $numb2 = $result
 
 
