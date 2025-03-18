@@ -12,13 +12,13 @@ number2=$3
 
 case $operator in
 +)
-result=$(($number + $number2))
+result=$(($number1 + $number2))
 ;;
 -)
 result=$(($number1 - $number2))
 ;;
 \*)
-result=$(($number * $number2))
+result=$(($number1 * $number2))
 ;;
 /)
   if [$number -eq 0];then
