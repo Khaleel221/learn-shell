@@ -1,36 +1,36 @@
 #Write a script that takes two numbers and an operator (+, , , /) as input and performs the calculation.
 
 if [ $# -ne 3 ];then
- echo "$0 <number1> <opreator> <number>"
- echo "example $0 2 + 3"
- exit 1
- fi
-
-num1=$1
-operator=$2
-num2=$3
-
-case "$operator" in
-+)
-result=$(($num1 + $num2))
-;;
--)
-result=$(($num1 - $num2))
-;;
-\*)
-result=$(($num1 * $num2))
-;;
-/)
-if [ $num2 -eq 0 ];then
-  echo "invalid number"
+  echo "usage: $0 <num1> <operator> <num2>"
+  echo "example $0 2 + 3"
   exit 1
   fi
-result=$(($num1 / $num2))
+
+number1=$1
+operator=$2
+number2=$3
+
+case $operator in
++)
+result=$(($number + $number2))
+;;
+-)
+result=$(($number1 - $number2))
+;;
+\*)
+result=$(($number * $number2))
+;;
+/)
+  if [$number -eq 0];then
+    echo "invalid number"
+  exit 1
+  fi
+result=$(($number / $number2))
 ;;
 *)
-echo "invalid number"
-exit 1
+  echo "invalid number"
 ;;
-esac
+elas
 
-echo "$num1 $operator $num2 =$result"
+echo "$number1 $operator $number2 = $result"
+
