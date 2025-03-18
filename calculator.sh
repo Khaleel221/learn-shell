@@ -12,16 +12,16 @@ numb2=$2
 
 case $operator in
 +)
-result=$(($numb1 + $numb3))
+result=$(($numb1 + $numb2))
 ;;
 -)
-result=$(($numb1 - $numb3))
+result=$(($numb1 - $numb2))
 ;;
 *)
-result=$(($numb1 * $numb3))
+result=$(($numb1 * $numb2))
 ;;
 /)
- if [$numb3 -eq 0]; then
+ if [$numb2 -eq 0]; then
    echo "zero is not dividable"
    exit
    fi
