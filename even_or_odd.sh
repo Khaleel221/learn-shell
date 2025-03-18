@@ -12,7 +12,7 @@ number=$1
 
 if [ $((number % 2)) -eq 0];then
   echo "number is even"
-  elseif [ $number =~ ^-[0-9]$ ];then
+  elseif [ $number =~ ^-[0-9]+$ ];then
     echo "number is invalid"
   else
     echo "number is odd"
