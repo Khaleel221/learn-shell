@@ -33,4 +33,4 @@ exit 1
 ;;
 esac
 
-echo "$num1 $operator $num2 =$result
+echo "$num1 $operator $num2 =$result"
