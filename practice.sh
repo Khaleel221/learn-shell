@@ -83,7 +83,6 @@
 
 echo "enter a directory name"
 read directory
-directory=$PWD
 echo "enter a filename"
 read filename
 
