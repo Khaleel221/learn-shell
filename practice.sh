@@ -81,8 +81,7 @@
 #    echo "number is odd"
 #  fi
 
-echo "enter a directory name"
-read directory
+directory=$PWD
 echo "enter a filename"
 read filename
 
@@ -97,3 +96,5 @@ if [ ! -f "$directory/$filename" ];then
 fi
 
 result=$(find "$directory" -type f | wc -l)
+
+echo $result
