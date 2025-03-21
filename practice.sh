@@ -10,11 +10,11 @@ fi
 
 filename_name=$1
 
-if [ -f "$filename" ]; then
-  echo "filename exits"
-  else
+if [ ! -f "$filename" ]; then
   echo "filename not found"
+  exit 1
 fi
 
 echo  "content of filename $filename:"
 cat $filename
+
