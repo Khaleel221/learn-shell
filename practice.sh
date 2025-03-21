@@ -25,34 +25,61 @@
 
 #Write a script that takes two numbers and an operator (+, , , /) as input and performs the calculation.
 
-if [ $# -ne 3 ]; then
-  echo "usage is:$0 <num1> <operator> <num2>"
+#if [ $# -ne 3 ]; then
+#  echo "usage is:$0 <num1> <operator> <num2>"
+#  exit 1
+#fi
+#
+#num1=$1
+#operator=$2
+#num2=$3
+#
+#case $operator in
+#+)
+#result=$(($num1 + $num2))
+#;;
+#-)
+#result=$(($num1 - $num2))
+#;;
+#\*)
+#result=$(($num1 * $num2))
+#;;
+#/)
+# if [ $num2 -eq 0 ];then
+#   echo "not dividable"
+#   exit 1
+#   fi
+#  result=$(($num1 / $num2))
+#;;
+#*)
+#echo "enter valid number"
+#esac
+#
+#echo "$result"
+
+#take a number as input and determine if it is even or odd.
+
+echo "enter a number"
+
+read number
+
+#argument provide or not
+if [ $# -eq 0];then
+  echo "usage $0:<argument> "
+  exit 1
+fi
+#check number is valid or not
+
+if ![[ $number =~ ^[0-9]$ ]];then
+  echo "inavlid number"
   exit 1
 fi
 
-num1=$1
-operator=$2
-num2=$3
+if [ $number % 2 -eq 0];then
+  echo "number is even"
+  else
+    echo "number is odd"
+  fi
 
-case $operator in
-+)
-result=$(($num1 + $num2))
-;;
--)
-result=$(($num1 - $num2))
-;;
-\*)
-result=$(($num1 * $num2))
-;;
-/)
- if [ $num2 -eq 0 ];then
-   echo "not dividable"
-   exit 1
-   fi
-  result=$(($num1 / $num2))
-;;
-*)
-echo "enter valid number"
-esac
 
-echo "$result"
+
