@@ -64,18 +64,18 @@ echo "enter a number"
 read number
 
 #argument provide or not
-if [ $# -eq 0];then
+if [ $# -eq 0 ];then
   echo "usage $0:<argument> "
   exit 1
 fi
 #check number is valid or not
 
-if ![[ $number =~ ^[0-9]+$ ]];then
+if ! [[ $number =~ ^[0-9]+$ ]];then
   echo "inavlid number"
   exit 1
 fi
 
-if [ $number % 2 == 0];then
+if ((number % 2 == 0)) ;then
   echo "number is even"
   else
     echo "number is odd"
