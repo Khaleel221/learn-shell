@@ -8,7 +8,7 @@ if [ $# -eq 0 ];then
   exit 1
 fi
 
-filename_name=$1
+$filename=$1
 
 if [ ! -f "$filename" ]; then
   echo "filename not found"
