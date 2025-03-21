@@ -96,4 +96,4 @@ if [ ! -f "$directory/$filename" ];then
   exit 1
 fi
 
-result=$(find "$directory" type -f | wc -l)
+result=$(find "$directory" -type f | wc -l)
