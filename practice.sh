@@ -16,5 +16,5 @@ if [ ! -f "$filename" ]; then
 fi
 
 echo  "content of filename $filename:"
-cat $filename
+cat "$filename"
 
