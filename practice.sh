@@ -70,12 +70,12 @@ if [ $# -eq 0];then
 fi
 #check number is valid or not
 
-if ![[ $number =~ ^[0-9]$ ]];then
+if ![[ $number =~ ^[0-9]+$ ]];then
   echo "inavlid number"
   exit 1
 fi
 
-if [ $number % 2 -eq 0];then
+if [ $number % 2 == 0];then
   echo "number is even"
   else
     echo "number is odd"
