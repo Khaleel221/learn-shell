@@ -59,27 +59,41 @@
 
 #take a number as input and determine if it is even or odd.
 
-echo "enter a number"
+#echo "enter a number"
+#
+#read number
+#
+##argument provide or not
+#if [ -z "$number" ];then
+#  echo "usage $0:<argument> "
+#  exit 1
+#fi
+##check number is valid or not
+#
+#if ! [[ $number =~ ^[0-9]+$ ]];then
+#  echo "inavlid number"
+#  exit 1
+#fi
+#
+#if ((number % 2 == 0)) ;then
+#  echo "number is even"
+#  else
+#    echo "number is odd"
+#  fi
 
-read number
+echo "enter a directory name"
+read directory
+echo "enter a filename"
+read filename
 
-#argument provide or not
-if [ $# -eq 0 ];then
-  echo "usage $0:<argument> "
+if [ ! -d "$directory" ];then
+  echo "directory not exits"
   exit 1
 fi
-#check number is valid or not
 
-if ! [[ $number =~ ^[0-9]+$ ]];then
-  echo "inavlid number"
+if [ ! -f "$directory/$filename" ];then
+  echo "filename not found"
   exit 1
 fi
 
-if ((number % 2 == 0)) ;then
-  echo "number is even"
-  else
-    echo "number is odd"
-  fi
-
-
-
+result=$(find "$directory" type -f | wc -l)
