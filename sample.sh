@@ -1,5 +1,5 @@
 ls
 pwd
-dnf list installed | grep vim
-ls
-touch txt
+mkdir demo
+touch text
+cat text
