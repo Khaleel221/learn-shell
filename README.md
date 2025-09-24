@@ -14,6 +14,8 @@ mkdir demo
 to execute this 
 bash <filename>
 then all commands execute one after another
+5. Coloured Output
+echo -e "\e[colm message\e[0m"
 
 
 
