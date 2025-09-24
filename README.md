@@ -16,6 +16,12 @@ bash <filename>
 then all commands execute one after another
 5. Coloured Output
 echo -e "\e[colm message\e[0m"
+6. Redirectors
+to redirect input and output commands
+> redirect output
+2> error redirect
+&> both redirect
+&>> append the output
 
 
 

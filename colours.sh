@@ -1,5 +1,7 @@
+
+touch text1
 echo -e "\e[31mchecking list of files\e[0m"
-ls
+ls > text1
 echo -e "\e[32mcreating directory\e[0m"
 mkdir demo
 echo -e "\e[33mcreating text file\e[0m"
