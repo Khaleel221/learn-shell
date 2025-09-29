@@ -1,0 +1,2 @@
+touch text
+ls > text
