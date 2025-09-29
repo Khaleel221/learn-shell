@@ -1,2 +1,2 @@
 touch text
-ls -l > text
+ls -l 2> text
