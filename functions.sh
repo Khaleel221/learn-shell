@@ -9,9 +9,12 @@
 ##calling function
 #hello
 
-#2.functions with arguments
-
-hello(){
-  echo "argument 1 is $1 and argument two is $2"
+#2.2.functions with arguments
+echo enter argumnet
+read $1
+echo argumnet 2
+read $2
+test2(){
+  echo "argument 1 is $1 and argumnet 2 $2"
 }
-hello "khaleel" "shaik"
+test2
