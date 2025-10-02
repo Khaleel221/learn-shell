@@ -30,6 +30,6 @@
 #global and local variable
 xa=10
 test(){
-echo $a
+echo $xa
 }
 test
