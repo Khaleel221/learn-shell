@@ -17,10 +17,10 @@
 #test2 $1 $2
 
 
-#3 function with return value
-add(){
+#3.2 function with return value
+hello(){
   sum=$(($1 + $2))
   echo $sum
 }
-ans=$(add 5 3)
-echo "ans is $ans"
+result=$(hello 3 4)
+echo $result
