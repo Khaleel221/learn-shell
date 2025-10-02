@@ -18,9 +18,18 @@
 
 
 #3.2 function with return value
-hello(){
-  sum=$(($1 + $2))
-  echo $sum
+#hello(){
+#  sum=$(($1 + $2))
+#  echo $sum
+#}
+#result=$(hello 3 4)
+#echo $result
+
+
+
+#global and local variable
+xa=10
+test(){
+echo $a
 }
-result=$(hello 3 4)
-echo $result
+test
