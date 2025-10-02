@@ -10,11 +10,8 @@
 #hello
 
 #2.2.functions with arguments
-echo enter argumnet
-read $1
-echo argumnet 2
-read $2
+
 test2(){
   echo "argument 1 is $1 and argumnet 2 $2"
 }
-test2
+test2 $1 $2
