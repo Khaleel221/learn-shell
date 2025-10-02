@@ -11,7 +11,16 @@
 
 #2.2.functions with arguments
 
-test2(){
-  echo "argument 1 is $1 and argumnet 2 $2"
+#test2(){
+#  echo "argument 1 is $1 and argumnet 2 $2"
+#}
+#test2 $1 $2
+
+
+#3 function with return value
+add(){
+  sum=$(($1 + $2))
+  echo $sum
 }
-test2 $1 $2
+ans=$(add 5 3)
+echo "ans is $ans"
