@@ -28,11 +28,11 @@
 
 
 #global and local variable
-xa=10
+xa=10 #global variable
 test(){
-local x=20
-echo $x
+local x=20 #loal variable
+#echo $x
 echo $xa
 }
 test
-echo $x
+
