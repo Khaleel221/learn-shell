@@ -32,7 +32,7 @@
 
 read -p "enter user name " user
 
-if whoami | grep  $user ; then
+if whoami | grep -q $user ; then
   echo "$user logged in"
 else
   echo "$user not logged in"
