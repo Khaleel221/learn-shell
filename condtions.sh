@@ -7,4 +7,4 @@ if [$a -gt 0]; then
   elif [$a -lt 0]; then
     echo "$a is negative number"
     else
-      echo "number is zero
+      echo "number is zero"
