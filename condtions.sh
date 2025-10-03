@@ -30,10 +30,11 @@
 
 #Check User Login
 
-read -p "enter user name" user
+read -p "enter user name " user
 
-if whoami | grep -q $user ; then
+if whoami | grep  $user ; then
   echo "$user logged in"
 else
   echo "$user not logged in"
+  echo $?
 fi
