@@ -10,10 +10,20 @@
 #fi
 
 #Check if a File Exists
-read -p "provide path to check file exits or not: " file_path
+#read -p "provide path to check file exits or not: " file_path
+#
+#if [ -e $file_path ]; then
+#  echo "$file_path file exits"
+#else
+#  echo "$file_path does not exits"
+#fi
 
-if [ -e $file_path ]; then
-  echo "$file_path file exits"
+#Compare Two Strings
+read -p "enter string 1: " str1
+read -p "enter string 2: " str2
+
+if [ $str1 == $str2 ];then
+ echo "$str1 and $str2 are same"
 else
-  echo "$file_path does not exits"
+  echo "both are diffrent"
 fi
