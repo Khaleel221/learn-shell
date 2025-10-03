@@ -1,7 +1,6 @@
 #1.2Check if a Number is Positive or Negative
 
-a=5819
-
+read -p "enter a number: " a
 if [ $a -gt 0 ];then
   echo "$a is postive number"
 elif [ $a -lt 0 ];then
@@ -9,3 +8,6 @@ elif [ $a -lt 0 ];then
 else
   echo "The $a is zero"
 fi
+
+#Check if a File Exists
+if
