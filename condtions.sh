@@ -1,6 +1,6 @@
 #1.2Check if a Number is Positive or Negative
 
-a=0622
+a=5819
 
 if [ $a -gt 0 ];then
   echo "$a is postive number"
