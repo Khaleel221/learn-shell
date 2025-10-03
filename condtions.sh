@@ -10,7 +10,7 @@
 #fi
 
 #Check if a File Exists
-read -p "provide path to check file exits or not" file_path
+read -p "provide path to check file exits or not: " file_path
 
 if [ -e $file_path ]; then
   echo "$file_path file exits"
