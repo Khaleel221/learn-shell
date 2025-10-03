@@ -30,7 +30,7 @@
 #global and local variable
 xa=10 #global variable
 test(){
-local x=20 #loal variable
+x=20 #loal variable
 #echo $x
 echo "global variable $xa"
 }
