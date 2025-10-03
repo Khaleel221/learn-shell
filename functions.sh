@@ -32,7 +32,7 @@ xa=10 #global variable
 test(){
 local x=20 #loal variable
 #echo $x
-echo $xa
+echo "global variable $xa"
 }
 test
-
+echo "local variable $x"
