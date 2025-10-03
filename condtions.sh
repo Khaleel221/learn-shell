@@ -8,3 +8,4 @@ elif [ $a -lt 0 ]; then
   echo "$a is negative number"
 else
   echo "number is zero"
+fi
